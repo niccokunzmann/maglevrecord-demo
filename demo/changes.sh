@@ -3,7 +3,7 @@
 export MAGLEV_OPTS=-W0
 
 tempfile="`dirname $0`/../tmp/migrate_auto?"
-rake_command=bundle exec rake migrate:auto?
+rake_command='bundle exec rake migrate:auto?'
 
 while maglev-ruby -e "" :
 do
