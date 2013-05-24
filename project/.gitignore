@@ -15,3 +15,4 @@
 /tmp
 
 app/models/my_model.rb
+migrations
