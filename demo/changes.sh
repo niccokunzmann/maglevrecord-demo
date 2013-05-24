@@ -8,5 +8,10 @@ do
   bundle exec rake migrate:auto? 1> $tempfile 2> $tempfile
   clear
   cat $tempfile
+  echo ----------------------------
+  bundle exec rake migrate:auto? 1> $tempfile 2> $tempfile
+  clear
+  cat $tempfile
+  echo ============================
 done
 
