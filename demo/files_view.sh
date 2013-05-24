@@ -2,7 +2,7 @@
 while :
 do
   clear
-  tree
+  tree ./migrations ./app/models
   sleep 1
 done
 
