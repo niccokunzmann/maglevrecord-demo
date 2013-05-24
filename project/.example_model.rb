@@ -7,3 +7,5 @@ class MyModel
 
   end
 end
+
+puts "loaded app/my_model.rb"

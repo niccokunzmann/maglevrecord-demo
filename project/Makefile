@@ -11,6 +11,13 @@ watch_files:
 watch_changes:
 	../demo/changes.sh
 
-clean:
+new_stone:
+	../demo/new_stone.sh
+	export MAGLEV_OPTS=-W0
+	
+newstone:	new_stone
+
+	
+clean: new_stone
 	rm -r ./migrations
 	rm ./app/models/my_model.rb
