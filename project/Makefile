@@ -5,15 +5,24 @@ nothing:
 example:
 	cat .example_model.rb > ./app/models/my_model.rb
 
+migrations: watch_migrations
+
+watch_migrations:
+	../demo/migrations.sh
+
+files: watch_files
+
 watch_files:
 	../demo/files_view.sh
+
+changes: watch_changes
 
 watch_changes:
 	../demo/changes.sh
 
 new_stone:
 	../demo/new_stone.sh
-	export MAGLEV_OPTS=-W0
+	$(shell export MAGLEV_OPTS=-W0)
 	
 newstone:	new_stone
 

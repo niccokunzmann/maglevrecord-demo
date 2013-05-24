@@ -1,0 +1,6 @@
+
+
+*  MyModel.maglev_record_persistable
+   is somethign that can be done when RootedBase is included
+
+
