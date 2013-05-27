@@ -138,7 +138,7 @@ After you applied it you have to do
 to apply the changes. (No changes since there is only a command but this will also create a new snapshot of all models from your model files).
 
 
-change the model
+Change the Model
 ----------------
 
 Edit [`app/models/my_model.rb`](project/.example_model.rb)
@@ -150,17 +150,36 @@ class MyModel
   # ...
   def my_method
   end
-  attr_acessor :name
-  # ...
+  attr_accessor :age
 end
 ```
 
+changes:
 
+    #new accessor :attribute of MyModel
+    #new instance method: MyModel.new.age
+    #new instance method: MyModel.new.age=
+    #new instance method: MyModel.new.my_method
 
+This can also be migrated since it creates a new snapshot.
 
+    bundle exec rake migrate:auto
+    bundle exec rake migrate:up
+    
+If one off the commands aborts with a `CommitFailedException` this is because of the monitoring scripts that commit to the stone.
+Just repeat it until it works.
 
+Remove Methods
+--------------
 
+Just do it and see what happens.
 
+Change Accessors
+----------------
 
+Just do it and see what happens.
+
+Superclass Mismatches
+---------------------
 
 
