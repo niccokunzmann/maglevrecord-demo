@@ -131,6 +131,30 @@ MaglevRecord::Migration.new(Time.parse('Mon May 27 12:19:00 +0000 2013'), 'fill 
 end
 ```
 
+After you applied it you have to do
+
+   rake migrate:up
+   
+to apply the changes. (No changes since there is only a command but this will also create a new snapshot of all models from your model files).
+
+
+change the model
+----------------
+
+Edit [`app/models/my_model.rb`](project/.example_model.rb)
+
+and add some methods and accessors like this:
+
+```ruby
+class MyModel
+  # ...
+  def my_method
+  end
+  attr_acessor :name
+  # ...
+end
+```
+
 
 
 
