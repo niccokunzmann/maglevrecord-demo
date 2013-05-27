@@ -110,7 +110,7 @@ See how the file system updates:
     ./app/models
     `-- my_model.rb
 
-And the new has to be appiled
+And the new migration has to be applied
 
     to do: 'fill in description here' from Mon May 27 14:19:00 +0000 2013
 
