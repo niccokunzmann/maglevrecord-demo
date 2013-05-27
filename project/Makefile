@@ -5,6 +5,11 @@ nothing:
 example:
 	cat .example_model.rb > ./app/models/my_model.rb
 
+example2:
+	cat .example_model2.rb > ./app/models/my_model2.rb
+
+examples: example2 example
+
 migrations: watch_migrations
 
 watch_migrations:

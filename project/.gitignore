@@ -15,4 +15,6 @@
 /tmp
 
 app/models/my_model.rb
+app/models/my_model2.rb
+
 migrations
