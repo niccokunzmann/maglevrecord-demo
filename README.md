@@ -3,11 +3,16 @@ maglevrecord-demo
 
 A demo application for maglev record.
 
+Make vs. Rake
+-------------
 
-keeping track of changes
+There is a [Makefile](project/Makefile) for the `make` command for this tutorial only.
+Its purpose is to access some commads faster. 
+It is not required by a real Rails application. 
+The [Rakefile](project/Rakefile) is used by the command `rake` and is used by all Rails applications.
+
+Keeping Track of Changes
 ------------------------
-
-
 
 Open 4 command line windows (terminals) in the [project](project) directory.
 
