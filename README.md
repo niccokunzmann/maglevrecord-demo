@@ -138,7 +138,7 @@ end
 
 After you applied it you have to do
 
-   rake migrate:up
+    rake migrate:up
    
 to apply the changes. (No changes since there is only a command but this will also create a new snapshot of all models from your model files).
 
