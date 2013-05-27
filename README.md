@@ -9,7 +9,7 @@ Make vs. Rake
 There is a [Makefile](project/Makefile) for the `make` command for this tutorial only.
 Its purpose is to access some commads faster. 
 It is not required by a real Rails application. 
-The [Rakefile](project/Rakefile) is used by the command `rake` and is used by all Rails applications.
+Whereas the [Rakefile](project/Rakefile) is used by the command `rake` and is used by all Rails applications.
 
 Keeping Track of Changes
 ------------------------
