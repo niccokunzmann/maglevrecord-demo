@@ -33,5 +33,5 @@ newstone:	new_stone
 
 	
 clean: new_stone
-	rm -r ./migrations
-	rm ./app/models/my_model.rb
+	rm -rf ./migrations
+	rm ./app/models/my_model*.rb
