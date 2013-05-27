@@ -184,7 +184,31 @@ Change Accessors
 
 Just do it and see what happens.
 
-Superclass Mismatches
----------------------
+Change Superclass
+-----------------
 
+    make example2
+    bundle exec rake migrate:auto
+    bundle exec migrate:up
+    
+creates a new model `MyModel2`.
 
+going to the [source of MyModel2](project/.example_model2.rb) the superclass can be changed:
+
+```ruby
+# ...
+MyModel2 < MyModel # let it inherit
+# ...
+```
+
+The changes show:
+    
+    # TypeError: superclass mismatch for MyModel2
+    # in ./app/models/my_model2.rb
+    MyModel2.change_superclass_to MyModel
+
+To resolve it and let the migration automatically set the new superclass one can do:
+
+    bundle exec rake migrate:auto
+    bundle exec migrate:up
+    
