@@ -69,7 +69,7 @@ This applies all migrations in the `migrations` folder and creates a snapshot of
 
     make example
 
-This crates a file [`app/models/my_model.rb`](.example_model.rb) with a class `MyModel`:
+This crates a file [`app/models/my_model.rb`](project/.example_model.rb) with a class `MyModel`:
 
 Automatically the changes will update:
 
@@ -77,7 +77,7 @@ Automatically the changes will update:
     loaded app/my_model.rb
     #new class: MyModel
     
-You can edit [`app/models/my_model.rb`](.example_model.rb) with your favourite editor.
+You can edit [`app/models/my_model.rb`](project/.example_model.rb) with your favourite editor.
 
 
 
