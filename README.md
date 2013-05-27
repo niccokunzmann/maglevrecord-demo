@@ -171,7 +171,7 @@ This can also be migrated since it creates a new snapshot.
     bundle exec rake migrate:auto
     bundle exec rake migrate:up
     
-If one off the commands aborts with a `CommitFailedException` this is because of the monitoring scripts that commit to the stone.
+If one of the commands aborts with a `CommitFailedException` this is because of the monitoring scripts that commit to the stone.
 Just repeat it until it works.
 
 remove methods
