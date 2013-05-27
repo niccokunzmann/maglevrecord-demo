@@ -29,7 +29,7 @@ Three of them are used to track the changes while you code.
         ./migrations [error opening dir]
         ./app/models
     
-    It uses tree to show the models and migrations of the project folder.
+    It uses `tree` to show the models and migrations of the project folder.
     
 2. see which migrations shall be applied:
 
