@@ -109,24 +109,31 @@ And the new has to be appiled
 
     to do: 'fill in description here' from Mon May 27 14:19:00 +0000 2013
 
-Migrations look like this:
+Migrations look like this and can be edited:
 
-    require "maglev_record/migration"
-    require "time"
-    
-    MaglevRecord::Migration.new(Time.parse('Mon May 27 12:19:00 +0000 2013'), 'fill in description here') do
-    
-      def up
-        #new class: MyModel
-      end
-    
-      def down
-        # put the code that reverses the code in up here 
-        # remove the next line that throws he error 
-        raise IrreversibleMigration, 'The migration has no downcode'
-      end
-    
-    end
+```ruby
+require "maglev_record/migration"
+require "time"
+
+MaglevRecord::Migration.new(Time.parse('Mon May 27 12:19:00 +0000 2013'), 'fill in description here') do
+
+  def up
+    # here is the code that is shown by bundle exec rake migrate:auto?
+    #new class: MyModel
+  end
+
+  def down
+    # put the code that reverses the code in up here 
+    # remove the next line that throws he error 
+    raise IrreversibleMigration, 'The migration has no downcode'
+  end
+
+end
+```
+
+
+
+
 
 
 
