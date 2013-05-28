@@ -197,7 +197,7 @@ going to the [source of MyModel2](project/.example_model2.rb) the superclass can
 
 ```ruby
 # ...
-MyModel2 < MyModel # let it inherit
+class MyModel2 < MyModel # let it inherit
 # ...
 ```
 
